@@ -1,0 +1,13 @@
+#ÐÞ¸Ätomcat¶Ë¿Ú
+server.port=9090
+
+#spring.activemq.broker-url=tcp://202.100.183.230:13800
+#spring.activemq.user=admin
+#spring.activemq.password=cr2018
+spring.activemq.broker-url=tcp://localhost:61616
+spring.activemq.user=admin
+spring.activemq.password=admin
+
+#spring.activemq.pool.enabled=true
+#spring.activemq.pool.max-connections=200
+#spring.activemq.pool.idle-timeout=30000

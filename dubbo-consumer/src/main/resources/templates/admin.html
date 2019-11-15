@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Shiro Test</title>
+</head>
+<body>
+    后台@RequiresPermissions(value = {"userInfo:add"})权限验证通过。<br>
+    <span>token: </span><span th:text="${session.token}"></span><br/><br/><br/>
+<div>
+    <a th:href="@{/requiresPermission?token=}+${session.token}">进入requiresPermission页面(后台@RequiresPermissions(value = {"userInfo:add"})权限控制)</a>
+</div><br><br>
+<div>
+    <shiro:hasPermission name="userInfo:add"><a href="/userInfo/add">点击添加固定用户信息(有userInfo:add权限才能看到，后台写死,方便测试)</a></shiro:hasPermission>
+    <br/>
+    <shiro:hasPermission name="userInfo:del"><a href="/userInfo/del">点击删除固定用户信息(userInfo:del权限才能看到，后台写死,方便测试)</a></shiro:hasPermission>
+    <br/>
+    <shiro:hasPermission name="userInfo:view"><a href="/userInfo/view">显示此内容表示拥有查看用户列表的权限(userInfo:view权限才能看到)</a></shiro:hasPermission>
+    <br/>
+</div>
+</body>
+</html>

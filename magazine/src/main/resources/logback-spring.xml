@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds" packagingData="false">
+<!--    <springProperty scope="context" name="LOGLEVEL" source="logging.level"/>-->
+    <!-- 改成项目名 -->
+    <contextName>magazine</contextName>
+    <!-- 日志文件夹，可以把所有项目的日志放进该文件夹，统一管理 -->
+    <property name="LOG_PATH" value="../logs" />
+    <!-- 第二层日志文件夹，用自己项目名，区别其他项目 -->
+    <property name="APPDIR" value="magazine" />
+    <!-- 大小超过该值则生成另一个日志文件 -->
+    <property name="LOGSIZE" value="10MB" />
+
+    <!-- 彩色日志 -->
+    <!-- 彩色日志依赖的渲染类 -->
+    <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter"/>
+    <conversionRule conversionWord="wex" converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter"/>
+    <conversionRule conversionWord="wEx" converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter"/>
+    <!-- 彩色日志格式 -->
+    <property name="CONSOLE_LOG_PATTERN" value="${CONSOLE_LOG_PATTERN:-%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"/>
+
+    <!-- 控制台日志输 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <!--服务器用GBK 本地调试用UTF-8,然后不要把UTF-8推上去-->
+            <!--<charset>GBK</charset>-->
+            <!--<charset>UTF-8</charset>-->
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>TRACE</level>
+        </filter>
+    </appender>
+
+    <appender name="FILEERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/${APPDIR}/error_log/log_error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/${APPDIR}/error_log/%d{yyyy-MM-dd}/log-error-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>${LOGSIZE}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <append>true</append>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>===%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger Line:%-3L - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+
+    <appender name="FILEWARN" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/${APPDIR}/warn_log/log_warn.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/${APPDIR}/warn_log/%d{yyyy-MM-dd}/log-warn-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>${LOGSIZE}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <append>true</append>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>===%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger Line:%-3L - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <appender name="FILEINFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/${APPDIR}/info_log/log_info.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/${APPDIR}/info_log/%d{yyyy-MM-dd}/log-info-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>${LOGSIZE}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <append>true</append>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>===%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger Line:%-3L - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <appender name="FILEDEBUG" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_PATH}/${APPDIR}/debug_log/log_debug.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_PATH}/${APPDIR}/debug_log/%d{yyyy-MM-dd}/log-debug-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>${LOGSIZE}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <append>true</append>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>===%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level %logger Line:%-3L - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>DEBUG</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <logger name="dao" level="DEBUG"/>
+    <logger name="org.springframework" level="WARN" />
+
+    <!-- 默认配置文件时日志的设置 -->
+    <springProfile name="default">
+        <root level="${LOGLEVEL}">
+            <appender-ref ref="STDOUT"/>
+            <appender-ref ref="FILEDEBUG"/>
+            <appender-ref ref="FILEINFO"/>
+            <appender-ref ref="FILEWARN"/>
+            <appender-ref ref="FILEERROR"/>
+        </root>
+    </springProfile>
+    <!-- dev配置文件日志的设置 -->
+    <springProfile name="dev">
+        <root level="${LOGLEVEL}">
+            <appender-ref ref="STDOUT" />
+            <appender-ref ref="FILEDEBUG" />
+            <appender-ref ref="FILEINFO" />
+            <appender-ref ref="FILEWARN" />
+            <appender-ref ref="FILEERROR" />
+        </root>
+    </springProfile>
+    <!-- test配置文件日志的设置 -->
+    <springProfile name="test">
+        <root level="${LOGLEVEL}">
+            <appender-ref ref="STDOUT" />
+            <appender-ref ref="FILEINFO" />
+            <appender-ref ref="FILEWARN" />
+            <appender-ref ref="FILEERROR" />
+        </root>
+    </springProfile>
+    <!-- prod配置文件日志的设置 -->
+    <springProfile name="prod">
+        <root level="${LOGLEVEL}">
+            <appender-ref ref="STDOUT" />
+            <appender-ref ref="FILEDEBUG" />
+            <appender-ref ref="FILEINFO" />
+            <appender-ref ref="FILEWARN" />
+            <appender-ref ref="FILEERROR" />
+        </root>
+    </springProfile>
+
+    <springProfile name="test">
+        <!-- 修改其他包的日志输出级别 -->
+        <logger name="org.springframework.security">
+            <level value="DEBUG"/>
+        </logger>
+
+        <logger name="org.springframework">
+            <level value="INFO"/>
+        </logger>
+
+        <logger name="dao" level="DEBUG" />
+
+        <logger name="com.disease.core" level="DEBUG" />
+
+        <root level="WARN">
+            <appender-ref ref="STDOUT"/>
+        </root>
+
+    </springProfile>
+
+</configuration>

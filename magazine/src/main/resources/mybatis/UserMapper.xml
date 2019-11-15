@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mybatis.mapper.UserMapper">
+
+	 
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="com.example.mybatis.entity.UserEntity">
+		<id column="id" property="id" />
+		<result column="guid" property="guid" />
+		<result column="username" property="username" />
+		<result column="password" property="password" />
+		<result column="telephone" property="telephone" />
+		<result column="salt" property="salt" />
+		<result column="org_id" property="orgId" />
+		<result column="goid" property="goid" />
+		<result column="org_type" property="orgType" />
+		<result column="status" property="status" />
+		<result column="gdid" property="gdid" />
+		<result column="dept_code" property="deptCode" />
+		<result column="dept_name" property="deptName" />
+		<result column="employee_id" property="employeeId" />
+		<result column="name" property="name" />
+		<result column="job_title" property="jobTitle" />
+		<result column="professor_type" property="professorType" />
+		<result column="gender" property="gender" />
+		<result column="login_time" property="loginTime" />
+		<result column="login_ip" property="loginIp" />
+		<result column="admin" property="admin" />
+		<result column="data_scope" property="dataScope" />
+		<result column="sign_url" property="signUrl" />
+		<result column="version" property="version" />
+		<result column="full_time_staff" property="fullTimeStaff" />
+	    <result column="create_by" property="createBy" />
+	    <result column="create_time" property="createTime" />
+	    <result column="update_by" property="updateBy" />
+	    <result column="update_time" property="updateTime" />
+	    <result column="del_flag" property="delFlag" />
+	    <result column="remark" property="remark" />
+	</resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        create_by,
+        create_time,
+        update_by,
+        update_time,
+        del_flag,
+        remark,
+        id, guid, username, password, telephone, salt, org_id AS orgId, goid, org_type AS orgType, status, gdid, dept_code AS deptCode, dept_name AS deptName, employee_id AS employeeId, name, job_title AS jobTitle, professor_type AS professorType, gender, login_time AS loginTime, login_ip AS loginIp, admin, data_scope AS dataScope, sign_url AS signUrl, version, full_time_staff AS fullTimeStaff
+    </sql>
+
+
+	<!-- mybatis plus where -->
+    <sql id="entityWrapperJoin">
+        <where>
+        	<if test="ew != null">
+    			<if test="ew.entity != null">
+                	<if test="ew.entity.id!=null">
+                    	AND cur_tab.id=#{ew.entity.id}
+                	</if>
+                	<if test="ew.entity.guid!=null and ew.entity.guid!=''">
+                    	AND cur_tab.guid=#{ew.entity.guid}
+                	</if>
+                	<if test="ew.entity.username!=null and ew.entity.username!=''">
+                    	AND cur_tab.username=#{ew.entity.username}
+                	</if>
+                	<if test="ew.entity.password!=null and ew.entity.password!=''">
+                    	AND cur_tab.password=#{ew.entity.password}
+                	</if>
+                	<if test="ew.entity.telephone!=null and ew.entity.telephone!=''">
+                    	AND cur_tab.telephone=#{ew.entity.telephone}
+                	</if>
+                	<if test="ew.entity.salt!=null and ew.entity.salt!=''">
+                    	AND cur_tab.salt=#{ew.entity.salt}
+                	</if>
+                	<if test="ew.entity.orgId!=null">
+                    	AND cur_tab.org_id=#{ew.entity.orgId}
+                	</if>
+                	<if test="ew.entity.goid!=null and ew.entity.goid!=''">
+                    	AND cur_tab.goid=#{ew.entity.goid}
+                	</if>
+                	<if test="ew.entity.orgType!=null">
+                    	AND cur_tab.org_type=#{ew.entity.orgType}
+                	</if>
+                	<if test="ew.entity.status!=null">
+                    	AND cur_tab.status=#{ew.entity.status}
+                	</if>
+                	<if test="ew.entity.gdid!=null and ew.entity.gdid!=''">
+                    	AND cur_tab.gdid=#{ew.entity.gdid}
+                	</if>
+                	<if test="ew.entity.deptCode!=null and ew.entity.deptCode!=''">
+                    	AND cur_tab.dept_code=#{ew.entity.deptCode}
+                	</if>
+                	<if test="ew.entity.deptName!=null and ew.entity.deptName!=''">
+                    	AND cur_tab.dept_name=#{ew.entity.deptName}
+                	</if>
+                	<if test="ew.entity.employeeId!=null and ew.entity.employeeId!=''">
+                    	AND cur_tab.employee_id=#{ew.entity.employeeId}
+                	</if>
+                	<if test="ew.entity.name!=null and ew.entity.name!=''">
+                    	AND cur_tab.name=#{ew.entity.name}
+                	</if>
+                	<if test="ew.entity.jobTitle!=null and ew.entity.jobTitle!=''">
+                    	AND cur_tab.job_title=#{ew.entity.jobTitle}
+                	</if>
+                	<if test="ew.entity.professorType!=null">
+                    	AND cur_tab.professor_type=#{ew.entity.professorType}
+                	</if>
+                	<if test="ew.entity.gender!=null and ew.entity.gender!=''">
+                    	AND cur_tab.gender=#{ew.entity.gender}
+                	</if>
+                	<if test="ew.entity.loginTime!=null">
+                    	AND cur_tab.login_time=#{ew.entity.loginTime}
+                	</if>
+                	<if test="ew.entity.loginIp!=null and ew.entity.loginIp!=''">
+                    	AND cur_tab.login_ip=#{ew.entity.loginIp}
+                	</if>
+                	<if test="ew.entity.admin!=null">
+                    	AND cur_tab.admin=#{ew.entity.admin}
+                	</if>
+                	<if test="ew.entity.dataScope!=null">
+                    	AND cur_tab.data_scope=#{ew.entity.dataScope}
+                	</if>
+                	<if test="ew.entity.signUrl!=null and ew.entity.signUrl!=''">
+                    	AND cur_tab.sign_url=#{ew.entity.signUrl}
+                	</if>
+                	<if test="ew.entity.version!=null">
+                    	AND cur_tab.version=#{ew.entity.version}
+                	</if>
+                	<if test="ew.entity.fullTimeStaff!=null">
+                    	AND cur_tab.full_time_staff=#{ew.entity.fullTimeStaff}
+                	</if>
+        			<if test="ew.entity.createBy!=null and ew.entity.createBy!=''">
+        				AND cur_tab.create_by=#{ew.entity.createBy}
+        			</if>
+        			<if test="ew.entity.createTime!=null">
+        				AND cur_tab.create_time=#{ew.entity.createTime}
+        			</if>
+        			<if test="ew.entity.updateBy!=null and ew.entity.updateBy!=''">
+        				AND cur_tab.update_by=#{ew.entity.updateBy}
+        			</if>
+        			<if test="ew.entity.updateTime!=null">
+        				AND cur_tab.update_time=#{ew.entity.updateTime}
+        			</if>
+        			<if test="ew.entity.delFlag!=null">
+        				AND cur_tab.del_flag=#{ew.entity.delFlag}
+        			</if>
+        			<if test="ew.entity.remark!=null and ew.entity.remark!=''">
+        				AND cur_tab.remark=#{ew.entity.remark}
+        			</if>
+				</if>
+            	<if test="ew!=null and ew.sqlSegment!=null and ew.notEmptyOfWhere">
+                	${ew.sqlSegment}
+            	</if>
+			</if>
+        </where>
+        <if test="ew!=null and ew.sqlSegment!=null and ew.emptyOfWhere">
+            ${ew.sqlSegment}
+        </if>
+	</sql>
+
+
+</mapper>

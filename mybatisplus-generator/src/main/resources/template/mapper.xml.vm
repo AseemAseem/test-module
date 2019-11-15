@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="${package.Mapper}.${table.mapperName}">
+
+#if(${enableCache})
+	<!-- 开启二级缓存 -->
+	<cache type="org.mybatis.caches.ehcache.LoggingEhcache"/>
+
+#end
+	 
+#if(${baseResultMap})
+	<!-- 通用查询映射结果 -->
+	<resultMap id="BaseResultMap" type="${package.Entity}.${entity}Entity">
+#foreach($field in ${table.fields})
+#if(${field.keyFlag})##生成主键排在第一位
+		<id column="${field.propertyName}" property="${field.propertyName}" />
+#end
+#end
+#foreach($field in ${table.fields})
+#if(!${field.keyFlag})##生成普通字段
+		<result column="${field.propertyName}" property="${field.propertyName}" />
+#end
+#end
+#foreach($field in ${table.commonFields})##生成公共字段
+	    <result column="${field.propertyName}" property="${field.propertyName}" />
+#end
+	</resultMap>
+
+#end
+#if(${baseColumnList})
+    <!-- 通用查询结果列 -->
+	<sql id="BaseColumns">
+#foreach($field in ${table.fields})
+		a.${field.name} AS ${field.propertyName},
+#end
+#foreach($field in ${table.commonFields})##<#-- 注：field.propertyName为大写 -->
+		a.${field.name} AS ${field.propertyName},
+#end
+
+	</sql 请删除上面多余的逗号>
+#end
+
+#if(${baseColumnList})
+	<!-- 列名前缀结果列 -->
+	<sql id="ColumnPrefixs">
+#foreach($field in ${table.fields})
+		#if(${baseColumnList}),#end${alias}.${field.name} AS ${prefix}${field.propertyName}
+#end
+#foreach($field in ${table.commonFields})
+		,${alias}.${field.name} AS ${prefix}${field.propertyName}
+#end
+
+	</sql>
+#end
+
+	<!-- mybatis plus where -->
+    <sql id="entityWrapperJoin">
+        <where>
+        	<if test="ew != null">
+    			<if test="ew.entity != null">
+#foreach($field in ${table.fields})
+#if(${field.propertyType} == 'String')
+                	<if test="ew.entity.${field.propertyName}!=null and ew.entity.${field.propertyName}!=''">
+                    	AND a.${field.name}=#{ew.entity.${field.propertyName}}
+                	</if>
+#else
+                	<if test="ew.entity.${field.propertyName}!=null">
+                    	AND a.${field.name}=#{ew.entity.${field.propertyName}}
+                	</if>
+#end
+#end
+#foreach($field in ${table.commonFields})
+#if(${field.propertyType} == 'String')
+        			<if test="ew.entity.${field.propertyName}!=null and ew.entity.${field.propertyName}!=''">
+        				AND a.${field.name}=#{ew.entity.${field.propertyName}}
+        			</if>
+#else
+        			<if test="ew.entity.${field.propertyName}!=null">
+        				AND a.${field.name}=#{ew.entity.${field.propertyName}}
+        			</if>
+#end
+#end
+				</if>
+            	<if test="ew!=null and ew.sqlSegment!=null and ew.notEmptyOfWhere">
+                	${ew.sqlSegment}
+            	</if>
+			</if>
+        </where>
+        <if test="ew!=null and ew.sqlSegment!=null and ew.emptyOfWhere">
+            ${ew.sqlSegment}
+        </if>
+	</sql>
+
+
+</mapper>

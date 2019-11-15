@@ -1,0 +1,92 @@
+package ${package.Controller};
+
+
+import org.springframework.web.bind.annotation.*;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+#if(${restControllerStyle})
+#else
+import org.springframework.stereotype.Controller;
+#end
+#if(${superControllerClassPackage})
+import ${superControllerClassPackage};
+#end
+import ${package.Service}.${table.serviceName};
+import org.springframework.beans.factory.annotation.Autowired;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
+import javax.servlet.http.HttpServletRequest;
+import com.baomidou.mybatisplus.plugins.Page;
+import com.baomidou.mybatisplus.mapper.Wrapper;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
+import ${package.Entity}.${entity}Entity;
+import com.disease.core.common.base.BaseMsg;
+import com.disease.core.common.base.BasePageDataDTO;
+
+/**
+ * <p>
+ * $!{table.comment} 前端控制器
+ * </p>
+ *
+ * @author ${author}
+ * @since ${date}
+ */
+@Api(tags="${table.comment}类")
+#if(${restControllerStyle})
+@RestController
+#else
+@Controller
+#end
+@RequestMapping("/#if(${controllerMappingHyphenStyle})${controllerMappingHyphen}#else${table.entityPath}#end")
+#if(${superControllerClass})
+public class ${table.controllerName} extends ${superControllerClass} {
+#else
+public class ${table.controllerName} {
+#end
+
+	private static final Logger logger = LoggerFactory.getLogger(${table.controllerName}.class);
+	
+	@Autowired
+	private ${table.serviceName} ${table.entityPath}Service;
+	
+	
+	@ApiOperation(value = "获取列表")
+	@ApiImplicitParams({
+		@ApiImplicitParam(name = "isPage", value = "是否分页,默认分页,false关闭分页", dataType = "Integer",paramType="query"),
+		@ApiImplicitParam(name = "page", value = "页码", dataType = "Integer",paramType="query"),
+		@ApiImplicitParam(name = "pageSize", value = "页数量", dataType = "Integer",paramType="query")})
+	@GetMapping("/viewList")
+    public BaseMsg list(HttpServletRequest request) {
+        Page buildPage = PageUtils.buildPage(request);
+        Page resultPage = ${table.entityPath}Service.selectPage(buildPage, null);
+        return BaseMsg.successData(resultPage);
+	}
+	
+	
+	@ApiOperation(value = "根据id获取信息")
+	@GetMapping("/view")
+	public BaseMsg getInfo(@RequestParam @ApiParam(name = "id", value = "id", required = true) long id) {
+		${entity}Entity entity = ${table.entityPath}Service.selectById(id);
+		return BaseMsg.successData(entity);
+	}
+	
+	@ApiOperation(value = "根据id删除信息")
+	@GetMapping("/delete")
+	public BaseMsg del(@RequestParam @ApiParam(name = "id", value = "id", required = true) long id) {
+		if(${table.entityPath}Service.deleteById(id))
+			return BaseMsg.successMsg("删除成功!");
+		return BaseMsg.errorMsg("删除失败!");
+	}
+
+
+	@ApiOperation(value = "保存")
+	@PostMapping("/save")
+	public BaseMsg del(@RequestBody ${entity}Entity entity) {
+		${table.entityPath}Service.insert(entity);
+        return BaseMsg.success();
+	}
+	
+}

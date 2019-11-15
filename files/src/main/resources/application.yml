@@ -1,0 +1,24 @@
+server:
+  port: 10001
+  servlet:
+    context-path: /tool
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+  http:
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+spring:
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+breakpoint:
+  upload:
+    dir: D:/FileUploadTest/
+    #5M=5 242 880
+    chunkSize: 5 242 880

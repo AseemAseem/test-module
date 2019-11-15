@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="consumer" />
+        <module name="websocket" />
+        <module name="mq-productor" />
+        <module name="provider" />
+        <module name="mq-consumer" />
+        <module name="magazine" />
+        <module name="mybatisplus-generator" />
+        <module name="files" />
+        <module name="spring-boot-provider" />
+        <module name="common-interface" />
+        <module name="wx-pay" />
+        <module name="generator" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="file" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common-interface" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="file" options="-parameters" />
+      <module name="files" options="-parameters" />
+      <module name="generator" options="-parameters" />
+      <module name="magazine" options="-parameters" />
+      <module name="mq-consumer" options="-parameters" />
+      <module name="mq-productor" options="-parameters" />
+      <module name="mybatisplus-generator" options="-parameters" />
+      <module name="provider" options="-parameters" />
+      <module name="spring-boot-provider" options="-parameters" />
+      <module name="websocket" options="-parameters" />
+      <module name="wx-pay" options="-parameters" />
+    </option>
+  </component>
+</project>

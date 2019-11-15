@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="45f67729-c10b-400a-97c9-f2d4ae173ba8" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/magazine/target/" />
+    <ignored path="$PROJECT_DIR$/dubbo-provider/target/" />
+    <ignored path="$PROJECT_DIR$/dubbo-spring-boot-provider/target/" />
+    <ignored path="$PROJECT_DIR$/files/target/" />
+    <ignored path="$PROJECT_DIR$/mq-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/dubbo-common-interface/target/" />
+    <ignored path="$PROJECT_DIR$/websocket/target/" />
+    <ignored path="$PROJECT_DIR$/dubbo-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/mq-productor/target/" />
+    <ignored path="$PROJECT_DIR$/mybatisplus-generator/target/" />
+    <ignored path="$PROJECT_DIR$/wx-pay/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="221" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/magazine/src/main/java/com/example/mybatis/web/RedisController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-194">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/magazine/src/main/resources/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/magazine/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3172">
+              <caret line="122" column="26" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/magazine/src/main/java/com/example/mybatis/entity/UserEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/magazine/src/main/java/com/example/mybatis/MagazineApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/magazine/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.6.RELEASE/spring-data-redis-2.0.6.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18122">
+              <caret line="787" column="32" selection-start-line="787" selection-start-column="32" selection-end-line="787" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fileName</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="D:/mpData/mapper/StandbyPushVoiceMapper.xml" />
+        <option value="D:/mpData/src/main/java/com/push/entity/StandbyPushVoiceEntity.java" />
+        <option value="D:/mpData/src/main/java/com/push/entity/AppBannerEntity.java" />
+        <option value="$PROJECT_DIR$/mybatisplus-generator/src/main/resources/template/mapper.xml.vm" />
+        <option value="D:/mpData/mapper/AppBannerMapper.xml" />
+        <option value="$PROJECT_DIR$/mybatisplus-generator/src/main/java/com/example/mybatis/MpGenerator.java" />
+        <option value="D:/mpData/src/main/java/com/yyd/robot/modules/push/entity/ApartPushVoiceEntity.java" />
+        <option value="$PROJECT_DIR$/mybatisplus-generator/src/main/resources/template/entity.java.vm" />
+        <option value="$PROJECT_DIR$/magazine/src/main/java/com/example/mybatis/dto/RedisStudentDto.java" />
+        <option value="$PROJECT_DIR$/magazine/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/magazine/pom.xml" />
+        <option value="$PROJECT_DIR$/magazine/src/main/java/com/example/mybatis/web/RedisController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring-boot-provider" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="websocket" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="websocket" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="wx-pay" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="wx-pay" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="453" />
+    <option name="y" value="203" />
+    <option name="width" value="1400" />
+    <option name="height" value="753" />
+  </component>
+  <component name="ProjectId" id="1PlwbPjruJFuF0HnpISte2mdHcY" />
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Android</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="test-module" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-module" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-module" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-module" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-module" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-module" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-module" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-module" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-module" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-module" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="test-module" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test-module" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="ToolWindowBean Validation.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../_Reference/crHcop-newstyle" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\_Work\_Project\_reference\test-module\generator\src\main\resources\template" />
+      <recent name="C:\Work\AllProjects\test-module\mybatis\src\main\resources\static" />
+      <recent name="C:\Work\AllProjects\test-module\mybatis\src\main\resources" />
+      <recent name="C:\Work\AllProjects\test-module\tool\src\main\resources\static\webupload" />
+      <recent name="C:\Work\rptestmodule\consumer\src\main\resources\bak" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="com.example.rpc.consumer" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.wxpay.exception" />
+      <recent name="com.example.wxpay.enums" />
+      <recent name="com.example.wxpay.web" />
+      <recent name="com.example.wxpay.Service" />
+      <recent name="com.example.wxpay.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\_Work\_Project\_reference\test-module\mybatisplus-generator\src\main\resources\template" />
+      <recent name="D:\_Work\_Project\_reference\test-module\wx-pay\src\main\java\com\example\wxpay\config" />
+      <recent name="D:\_Work\_Project\_reference\test-module\wx-pay\src\main\java\com\example\wxpay" />
+      <recent name="D:\_Work\_Project\_reference\test-module\generator\src\main\resources" />
+      <recent name="D:\_Work\_Project\_reference\test-module\magazine\src\main\resources\template" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MagazineApplication">
+    <configuration name="MpGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.mybatis.MpGenerator" />
+      <module name="generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.mybatis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="rp-test-module" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommonInterfaceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="common-interface" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.rpc.commoninterface.CommonInterfaceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.rpc.consumer.ConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="files" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.tool.tool.FilesApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MagazineApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="magazine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.mybatis.*" />
+          <option name="ENABLED" value="false" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.mybatis.MagazineApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MqConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mq-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.mq.consumer.mqconsumer.MqConsumerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MqProductorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="mq-productor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.mqproductor.mqproductor.MqProductorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisplusGeneratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="generator" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.mybatisplusgenerator.MybatisplusGeneratorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.rpc.provider.ProviderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringBootProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-boot-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.rpc.springbootprovider.SpringBootProviderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebsocketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="websocket" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.websocket.websocket.WebsocketApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WxPayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="wx-pay" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.wxpay.WxPayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MpGenerator" />
+      <item itemvalue="Spring Boot.CommonInterfaceApplication" />
+      <item itemvalue="Spring Boot.ConsumerApplication" />
+      <item itemvalue="Spring Boot.ProviderApplication" />
+      <item itemvalue="Spring Boot.SpringBootProviderApplication" />
+      <item itemvalue="Spring Boot.MqConsumerApplication" />
+      <item itemvalue="Spring Boot.MqProductorApplication" />
+      <item itemvalue="Spring Boot.WebsocketApplication" />
+      <item itemvalue="Spring Boot.FilesApplication" />
+      <item itemvalue="Spring Boot.WxPayApplication" />
+      <item itemvalue="Spring Boot.MybatisplusGeneratorApplication" />
+      <item itemvalue="Spring Boot.MagazineApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.MagazineApplication" />
+        <item itemvalue="Application.MpGenerator" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="45f67729-c10b-400a-97c9-f2d4ae173ba8" name="Default Changelist" comment="" />
+      <created>1555990498158</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555990498158</updated>
+      <workItem from="1555990503749" duration="7958000" />
+      <workItem from="1556003849975" duration="2926000" />
+      <workItem from="1556007381733" duration="1320000" />
+      <workItem from="1556013427018" duration="1962000" />
+      <workItem from="1556072992382" duration="858000" />
+      <workItem from="1556073952365" duration="1502000" />
+      <workItem from="1556092856949" duration="2376000" />
+      <workItem from="1556158478460" duration="3327000" />
+      <workItem from="1556175081780" duration="8514000" />
+      <workItem from="1556183921175" duration="41000" />
+      <workItem from="1556185390068" duration="16000" />
+      <workItem from="1556500921092" duration="1280000" />
+      <workItem from="1556508930980" duration="1356000" />
+      <workItem from="1556519809433" duration="39000" />
+      <workItem from="1556520281242" duration="1172000" />
+      <workItem from="1556521514656" duration="116000" />
+      <workItem from="1556521932723" duration="626000" />
+      <workItem from="1556586153343" duration="15830000" />
+      <workItem from="1556611606694" duration="1062000" />
+      <workItem from="1557041138941" duration="1295000" />
+      <workItem from="1557042510416" duration="7818000" />
+      <workItem from="1557122479481" duration="1211000" />
+      <workItem from="1557795793596" duration="218000" />
+      <workItem from="1557993723945" duration="3341000" />
+      <workItem from="1557999176821" duration="688000" />
+      <workItem from="1558076533617" duration="73000" />
+      <workItem from="1558076639847" duration="23000" />
+      <workItem from="1558076676976" duration="1622000" />
+      <workItem from="1558078875396" duration="2830000" />
+      <workItem from="1558084484762" duration="1151000" />
+      <workItem from="1558319541820" duration="5182000" />
+      <workItem from="1558333046563" duration="3073000" />
+      <workItem from="1558346551221" duration="52000" />
+      <workItem from="1558347111575" duration="344000" />
+      <workItem from="1558401079807" duration="1428000" />
+      <workItem from="1558403032934" duration="12000" />
+      <workItem from="1558405960600" duration="230000" />
+      <workItem from="1558595149984" duration="5177000" />
+      <workItem from="1558603990698" duration="553000" />
+      <workItem from="1559630434774" duration="4176000" />
+      <workItem from="1559635884754" duration="5102000" />
+      <workItem from="1559696706424" duration="7259000" />
+      <workItem from="1559704179926" duration="2100000" />
+      <workItem from="1559805078246" duration="10212000" />
+      <workItem from="1559815439602" duration="55000" />
+      <workItem from="1559815507726" duration="920000" />
+      <workItem from="1559816439071" duration="114000" />
+      <workItem from="1559816559969" duration="200000" />
+      <workItem from="1559816879163" duration="59000" />
+      <workItem from="1560128535122" duration="2562000" />
+      <workItem from="1560217199193" duration="7456000" />
+      <workItem from="1560225322019" duration="1238000" />
+      <workItem from="1560232959655" duration="373000" />
+      <workItem from="1560233350518" duration="233000" />
+      <workItem from="1560233591229" duration="116000" />
+      <workItem from="1560233713272" duration="68000" />
+      <workItem from="1560236572727" duration="12009000" />
+      <workItem from="1560301990085" duration="3006000" />
+      <workItem from="1560305132976" duration="7717000" />
+      <workItem from="1560312871305" duration="16736000" />
+      <workItem from="1560335199344" duration="77000" />
+      <workItem from="1560388097831" duration="4488000" />
+      <workItem from="1560392597884" duration="4363000" />
+      <workItem from="1560396969687" duration="1743000" />
+      <workItem from="1560406184962" duration="9646000" />
+      <workItem from="1560475417391" duration="10809000" />
+      <workItem from="1560496177805" duration="3183000" />
+      <workItem from="1560733577166" duration="1709000" />
+      <workItem from="1560751124736" duration="81000" />
+      <workItem from="1560751423231" duration="337000" />
+      <workItem from="1560751824473" duration="49000" />
+      <workItem from="1560759247788" duration="5360000" />
+      <workItem from="1561170459600" duration="251000" />
+      <workItem from="1561170966997" duration="207000" />
+      <workItem from="1561632505794" duration="121000" />
+      <workItem from="1561709947621" duration="5000" />
+      <workItem from="1561711051982" duration="454000" />
+      <workItem from="1561728297061" duration="357000" />
+      <workItem from="1561958785433" duration="72000" />
+      <workItem from="1562288336244" duration="8247000" />
+      <workItem from="1562296898679" duration="284000" />
+      <workItem from="1562319103702" duration="3487000" />
+      <workItem from="1562322601293" duration="442000" />
+      <workItem from="1562323049935" duration="3908000" />
+      <workItem from="1562376748268" duration="6387000" />
+      <workItem from="1562384433885" duration="1708000" />
+      <workItem from="1562550304578" duration="1739000" />
+      <workItem from="1562573273819" duration="37000" />
+      <workItem from="1562584604206" duration="1200000" />
+      <workItem from="1562636388170" duration="68000" />
+      <workItem from="1562924741130" duration="724000" />
+      <workItem from="1563247037875" duration="35000" />
+      <workItem from="1563257995699" duration="21000" />
+      <workItem from="1563334419664" duration="60000" />
+      <workItem from="1563422459106" duration="1463000" />
+      <workItem from="1563529906215" duration="637000" />
+      <workItem from="1563684482492" duration="16000" />
+      <workItem from="1563800448544" duration="682000" />
+      <workItem from="1565574299704" duration="2565000" />
+      <workItem from="1565578946629" duration="530000" />
+      <workItem from="1565589447878" duration="716000" />
+      <workItem from="1565590232456" duration="99000" />
+      <workItem from="1565590448198" duration="2240000" />
+      <workItem from="1565592730767" duration="896000" />
+      <workItem from="1565595397493" duration="868000" />
+      <workItem from="1565600015232" duration="510000" />
+      <workItem from="1565600547038" duration="633000" />
+      <workItem from="1565666425820" duration="42000" />
+      <workItem from="1565750176166" duration="397000" />
+      <workItem from="1565750580038" duration="2111000" />
+      <workItem from="1565752709972" duration="2461000" />
+      <workItem from="1565760287649" duration="108000" />
+      <workItem from="1565760948635" duration="8447000" />
+      <workItem from="1565769700515" duration="19000" />
+      <workItem from="1565770041785" duration="151000" />
+      <workItem from="1565770258194" duration="2147000" />
+      <workItem from="1565772427248" duration="18000" />
+      <workItem from="1565772732379" duration="240000" />
+      <workItem from="1565773025428" duration="923000" />
+      <workItem from="1565846950945" duration="679000" />
+      <workItem from="1565917726478" duration="736000" />
+      <workItem from="1565925162095" duration="11789000" />
+      <workItem from="1565944137972" duration="1324000" />
+      <workItem from="1565945582383" duration="175000" />
+      <workItem from="1565945763396" duration="14000" />
+      <workItem from="1565945836024" duration="5323000" />
+      <workItem from="1566176249562" duration="555000" />
+      <workItem from="1566195472889" duration="1565000" />
+      <workItem from="1566462063120" duration="1463000" />
+      <workItem from="1566463800620" duration="689000" />
+      <workItem from="1566464738033" duration="270000" />
+      <workItem from="1566465235705" duration="382000" />
+      <workItem from="1566466439043" duration="90000" />
+      <workItem from="1566467151265" duration="19000" />
+      <workItem from="1566467385533" duration="2415000" />
+      <workItem from="1566471385650" duration="737000" />
+      <workItem from="1566521177063" duration="665000" />
+      <workItem from="1566522411335" duration="289000" />
+      <workItem from="1566525294678" duration="594000" />
+      <workItem from="1566526339562" duration="170000" />
+      <workItem from="1566528962239" duration="1327000" />
+      <workItem from="1566531107707" duration="3000" />
+      <workItem from="1566531160676" duration="19000" />
+      <workItem from="1566531502294" duration="563000" />
+      <workItem from="1566540107684" duration="737000" />
+      <workItem from="1566540988753" duration="2041000" />
+      <workItem from="1566785629373" duration="1348000" />
+      <workItem from="1566798962173" duration="1233000" />
+      <workItem from="1566801699107" duration="1056000" />
+      <workItem from="1566888358479" duration="137000" />
+      <workItem from="1568969146090" duration="843000" />
+      <workItem from="1568970012149" duration="33000" />
+      <workItem from="1568970064050" duration="6425000" />
+      <workItem from="1568981648199" duration="582000" />
+      <workItem from="1572957245590" duration="44000" />
+      <workItem from="1572957687325" duration="1412000" />
+      <workItem from="1573008138039" duration="126000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="18693000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="367" y="165" width="1128" height="606" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2953271" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29347825" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37235773" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run Dashboard" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.36807817" />
+      <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="15" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="5" visible="true" weight="0.09701493" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.35140187" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/test_module$MybatisApplication__1_.ic" NAME="MybatisApplication (1) Coverage Results" MODIFIED="1559812414619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/test_module$JwtUtil.ic" NAME="JwtUtil Coverage Results" MODIFIED="1560328901689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.example.rpc.consumer.common.utils.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://D:/mpData/mapper/StandbyPushVoiceMapper.xml" />
+    <entry file="file://D:/mpData/src/main/java/com/push/entity/StandbyPushVoiceEntity.java" />
+    <entry file="file://$PROJECT_DIR$/magazine/src/main/java/com/example/mybatis/common/base/BaseEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/mpData/src/main/java/com/push/mapper/AppBannerMapper.java" />
+    <entry file="file://D:/mpData/src/main/java/com/push/service/IAppBannerService.java" />
+    <entry file="file://D:/mpData/src/main/java/com/push/service/impl/AppBannerServiceImpl.java" />
+    <entry file="file://D:/mpData/src/main/java/com/push/entity/AppBannerEntity.java" />
+    <entry file="file://D:/mpData/src/main/java/com/push/web/AppBannerController.java" />
+    <entry file="file://$PROJECT_DIR$/mybatisplus-generator/src/main/resources/template/mapper.xml.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/mpData/src/main/java/c/app/entity/AppBannerEntity.java" />
+    <entry file="file://D:/mpData/src/main/java/c/app/mapper/AppBannerMapper.java" />
+    <entry file="file://D:/mpData/src/main/java/c/app/service/IAppBannerService.java" />
+    <entry file="file://D:/mpData/src/main/java/c/app/service/impl/AppBannerServiceImpl.java" />
+    <entry file="file://D:/mpData/src/main/java/c/app/web/AppBannerController.java" />
+    <entry file="file://D:/robot-opera-maintenance/robot-admin/src/main/java/com/yyd/robot/modules/push/entity/ApartPushVoiceEntity.java" />
+    <entry file="file://D:/mpData/src/main/java/com/yyd/robot/modules/push/entity/AppBannerEntity.java" />
+    <entry file="file://D:/mpData/mapper/AppBannerMapper.xml" />
+    <entry file="file://D:/robot-opera-maintenance/robot-admin/src/main/resources/mapper/push/ApartPushVoiceDao.xml" />
+    <entry file="jar://D:/jdk1.8.0.211/jdk1.8.0_211/src.zip!/java/lang/String.java" />
+    <entry file="file://D:/mpData/src/main/java/com/yyd/robot/modules/push/entity/ApartPushVoiceEntity.java" />
+    <entry file="file://$PROJECT_DIR$/mybatisplus-generator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatisplus-generator/src/main/resources/template/entity.java.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="92" column="44" selection-start-line="92" selection-start-column="44" selection-end-line="92" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatisplus-generator/src/main/java/com/example/mybatis/MpGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magazine/src/main/java/com/example/mybatis/dto/RedisDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magazine/src/main/java/com/example/mybatis/dto/RedisStudentDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magazine/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magazine/src/main/java/com/example/mybatis/web/RedisController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magazine/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magazine/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3172">
+          <caret line="122" column="26" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magazine/src/main/java/com/example/mybatis/entity/UserEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magazine/src/main/java/com/example/mybatis/MagazineApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/magazine/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/2.0.6.RELEASE/spring-data-redis-2.0.6.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18122">
+          <caret line="787" column="32" selection-start-line="787" selection-start-column="32" selection-end-line="787" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>wx-pay:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>common-interface</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: bouncycastle:bcmail-jdk14:138</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

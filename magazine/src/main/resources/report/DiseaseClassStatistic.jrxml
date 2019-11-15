@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report3" language="groovy" pageWidth="900" pageHeight="842" columnWidth="860" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5b2e274e-d6bb-4b1a-a363-41e6c0f595cd">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.report.description" value=""/>
+	<property name="ireport.zoom" value="1.6528925619834736"/>
+	<property name="ireport.x" value="214"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="dType" class="java.lang.String"/>
+	<parameter name="rArea" class="java.lang.String"/>
+	<parameter name="dName" class="java.lang.String"/>
+	<parameter name="reportTime" class="java.lang.String"/>
+	<parameter name="title" class="java.lang.String"/>
+	<field name="diseaseName" class="java.lang.String"/>
+	<field name="diseaseNums" class="java.lang.Integer"/>
+	<field name="sumDiseasePercent" class="java.lang.String"/>
+	<field name="deathNums" class="java.lang.Integer"/>
+	<field name="sumDeathPercent" class="java.lang.String"/>
+	<field name="deathPercent" class="java.lang.String"/>
+	<field name="sumDiseaseDeathPercent" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="78" splitType="Stretch">
+			<textField>
+				<reportElement uuid="3c73c378-c5b0-436b-ba21-27e589739535" x="737" y="58" width="127" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{dType}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="8adcdbaf-1a19-4235-b1d8-d44878fe48fd" x="737" y="39" width="127" height="19"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{rArea}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="6936925f-8cec-40bf-8652-8c8c62fd40ba" x="737" y="20" width="127" height="19"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{dName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f2c38dde-fcb9-4eaa-bf81-a85b1c3d2581" x="737" y="0" width="127" height="20"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{reportTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3ee8ed5e-9ab4-4d04-9d3f-ba06fed53902" x="-19" y="0" width="646" height="78"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$P{title}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="5742e990-a376-4b13-92ef-27f0f3730c57" x="627" y="0" width="110" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[统计日期]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3c2146db-329f-4177-8f18-1fef9d9b72b9" x="627" y="20" width="110" height="19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[疾病名称]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f7ac94fb-c256-48d7-aa37-bf08bf742514" x="627" y="39" width="110" height="19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[统计地区]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2c965fa1-c3f2-4c90-81b7-e0e09a7a8b87" x="627" y="58" width="110" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[病例分类]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="4f82479a-73b1-4055-b972-ffc628d0624e" x="-19" y="0" width="108" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[病种]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="ba96a372-9d00-40d1-a654-658a3cf6ff52" x="89" y="0" width="106" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[发病数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1b041137-3ca7-4a78-86fe-ecf4ccfeef18" x="195" y="0" width="110" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[占总发病数百分比（%）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="5443a210-0fea-4d53-820e-cb2fa4c65e9e" x="305" y="0" width="106" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[死亡数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="50684584-3a27-44e1-82f5-c5840937ca80" x="411" y="0" width="110" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[占总死亡数百分比（%）]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="cbf19833-57f8-478e-9163-20717d318e1f" x="521" y="0" width="106" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[病死率]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="b51cb77c-f2b4-4c74-bafb-d5f2795185ce" x="627" y="0" width="110" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[占总病死率百分比（%）]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="9a982780-bbe9-42d4-bc22-6691f150610b" x="-19" y="0" width="108" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{diseaseName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ad9e6b33-42fb-4100-a1ef-ef3cf01fc437" x="89" y="0" width="106" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{diseaseNums}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="e758af89-3383-49ae-a98d-382a645c9ca0" x="195" y="0" width="110" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sumDiseasePercent}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="10fc0f75-5b58-4f03-a0cc-4b19d7823f83" x="305" y="0" width="106" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{deathNums}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ad9c9419-4cd3-4ae3-b5cb-c5769644b7e4" x="411" y="0" width="110" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sumDeathPercent}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b7cc5171-4dda-4bd4-8943-03955ee5cde8" x="521" y="0" width="106" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{deathPercent}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="84a92837-deb5-4af5-9e60-37cd3411ee27" x="627" y="0" width="110" height="20"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sumDiseaseDeathPercent}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

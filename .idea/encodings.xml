@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/dubbo-common-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-spring-boot-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/files" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magazine" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/magazine/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mq-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mq-productor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatisplus-generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/websocket" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wx-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wx-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/wx-pay" charset="UTF-8" />
+    <file url="PROJECT" charset="GBK" />
+  </component>
+</project>

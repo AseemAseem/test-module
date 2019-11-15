@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Shiro Test</title>
+</head>
+<body>
+<span>欢迎您!</span><h5 th:text="${session.currentUser.name }"></h5><br/>
+<span>token: </span><span th:text="${session.token}"></span><br/><br/><br/>
+<a th:href="@{/admin?token=}+${session.token}">点击进入admin页面</a></body>
+</html>

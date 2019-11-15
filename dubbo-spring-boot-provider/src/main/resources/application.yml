@@ -1,0 +1,14 @@
+
+server:
+  port: 8081
+
+dubbo:
+  application:
+    name: spring-boot-provider
+  protocol:
+    name: dubbo
+    port: 28081
+  registry:
+    address: zookeeper://localhost:2181
+  provider:
+    check: false
