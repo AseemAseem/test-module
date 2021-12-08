@@ -82,6 +82,9 @@ public class MpGenerator {
 		gc.setBaseColumnList(true);
 		gc.setOpen(false);
 //		gc.setAuthor(SubVersion.getInstance().getCurrentConnectName());
+		// 不用IService命名风格
+		gc.setMapperName("%sDao");
+		gc.setServiceName("%sService");
 		mpg.setGlobalConfig(gc);
 
 		// 数据源配置
